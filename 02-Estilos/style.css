@@ -1,0 +1,9 @@
+body {
+    background-color: cadetblue;
+    font-family: sans-serif;
+}
+
+.titulo {
+    color: white;
+    background-color: black;
+}
