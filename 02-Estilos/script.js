@@ -54,3 +54,51 @@ console.log("El color del titulo es: " + titulo.style.color);
 titulo.style.color = "pink";
 titulo.style.backgroundColor = "purple";
 titulo.style.fontSize = "48px";
+
+/* 
+
+Método setProperty()
+
+Asignamos una propiedad de estilo a un elemento seleccionado
+
+sintaxis:
+elemento.style.setProperty(nombrePropiedad, valor, important);
+
+- Más felxible, por lo tanto más usado
+- Las propiedades se escriben en kebab-kase
+- El parametr "important" es opcional
+
+*/
+
+titulo.style.setProperty("color", "darkblue");
+titulo.style.setProperty("background-color", "green", "important");
+
+/* 
+
+Eliminar valores de propiedades
+
+node.style.nombrePropiedad = "" //Asignamos cadena vacía 
+
+En esta sintaxis, la propiedad de css va en formato camelCase
+
+*/
+
+//titulo.style.color = "";
+//titulo.style.backgroundColor = "";
+
+/* 
+
+Método removeProperty()
+
+Esto elimina la prpiedad de estilo
+
+Sintaxis:
+
+nodo.style.removeProperty(nombre-propiedad); //nombre de la propiedad en formato kebab-case
+
+*/
+
+titulo.style.removeProperty("color");
+titulo.style.removeProperty("background-color");
+titulo.style.removeProperty("font-size");
+
